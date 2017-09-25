@@ -15,17 +15,19 @@ class CreateStudentProfilesTable extends Migration
     {
         Schema::create('student_profiles', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('Full name');
-            $table->dateTime('Date Of Birth');
-            $table->string('Marital Status',8);
+            $table->integer('user_id');
+            $table->string('FullName');
+            $table->dateTime('DateOfBirth');
+            $table->string('MaritalStatus',15);
             $table->string('Nationality');
             $table->string('Email');
-            $table->text('Permanent Address');
-            $table->integer('Home Phone');
-            $table->integer('National ID');
+            $table->text('PermanentAddress');
+            $table->string('HomePhone');
+            $table->string('NationalID');
             $table->string('District',12);
             $table->string('Country',15);
-            $table->string('Blood Group',3);
+            $table->string('BloodGroup',3);
+            $table->string('Image_File');
             $table->timestamps();
         });
     }

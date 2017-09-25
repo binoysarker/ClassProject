@@ -21,6 +21,11 @@ Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');
 
 /*
- * StudentProfileController section
+ * StudentProfileController and StudentResultController section
  */
 Route::resource('/StudentProfile','StudentProfileController');
+Route::resource('/StudentResult','StudentResultController');
+/*
+ *EducationInformationController section
+ */
+Route::resource('/EducationInformation','EducationInformationController');

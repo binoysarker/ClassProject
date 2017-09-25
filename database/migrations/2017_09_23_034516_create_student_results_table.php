@@ -16,13 +16,15 @@ class CreateStudentResultsTable extends Migration
         Schema::create('student_results', function (Blueprint $table) {
             $table->increments('id');
             $table->integer('student_profile_id');
+            $table->integer('user_id');
             $table->string('program');
             $table->string('semester');
-            $table->string('course-title');
-            $table->float('course-credit',2,2);
-            $table->float('credit-earned',2,2);
+            $table->string('Course_no');
+            $table->string('course_title');
+            $table->float('course_credit');
+            $table->float('credit_earned');
             $table->string('grade',3);
-            $table->float('grade-point',2,2);
+            $table->float('grade_point');
             $table->timestamps();
         });
     }

@@ -4,5 +4,9 @@
 @endsection
 
 @section('content')
-    Home content
+    <div class="container">
+        <div class="row">
+            Home content
+        </div>
+    </div>
 @endsection

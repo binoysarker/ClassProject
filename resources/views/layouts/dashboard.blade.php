@@ -96,7 +96,8 @@
         <div class="col-lg-4 " >
             <div class="card " >
                 <div class="list-group">
-                    <button type="button" class="list-group-item list-group-item-action" data-toggle="collapse" data-target="#list1">Student</button>
+                    <button type="button" class="list-group-item list-group-item-action" data-toggle="collapse" data-target="#list1">Student <span><i class="fa fa-caret-square-o-down
+                    pull-right" aria-hidden="true"></i></span></button>
                     {{--list for student section--}}
                     <ul id="list1" class="collapse">
                         <li>
@@ -117,7 +118,7 @@
                         </li>
                         <li>
                             <i class="fa fa-user-circle-o" aria-hidden="true"></i>
-                            <a href="">Student Grade Sheet</a>
+                            <a href="{{url('/StudentResult')}}">Student Grade Sheet</a>
                         </li>
                         <li>
                             <i class="fa fa-user-circle-o" aria-hidden="true"></i>
@@ -136,13 +137,10 @@
                             <a href="">Show Course Sequence</a>
                         </li>
                     </ul>
-                    <button type="button" class="list-group-item list-group-item-action" data-toggle="collapse" data-target="#list2">Advising</button>
+                    <button type="button" class="list-group-item list-group-item-action" data-toggle="collapse" data-target="#list2">Advising <span><i class="fa fa-caret-square-o-down pull-right" aria-hidden="true"></i></span></button>
                     {{--list for Advising section--}}
                     <ul id="list2" class="collapse">
-                        <li>
-                            <span></span>
-                            <a href=""><i class="fa fa-user-circle-o" aria-hidden="true"></i> My Profile</a>
-                        </li>
+
                         <li>
                             <i class="fa fa-user-circle-o" aria-hidden="true"></i>
                             <a href="">Advising Panel</a>
@@ -160,7 +158,8 @@
                             <a href="">Advised Course(s)</a>
                         </li>
                     </ul>
-                    <button type="button" class="list-group-item list-group-item-action" data-toggle="collapse" data-target="#list3">Student Accounts</button>
+                    <button type="button" class="list-group-item list-group-item-action" data-toggle="collapse" data-target="#list3">Student Accounts<span><i class="fa fa-caret-square-o-down
+                    pull-right" aria-hidden="true"></i></span></button>
                     {{--list for Student Accounts section--}}
                     <ul id="list3" class="collapse">
                         <li>
@@ -168,7 +167,8 @@
                             <a href="">Download Advising Registration Form</a>
                         </li>
                     </ul>
-                    <button type="button" class="list-group-item list-group-item-action" data-toggle="collapse" data-target="#list4">Medical</button>
+                    <button type="button" class="list-group-item list-group-item-action" data-toggle="collapse" data-target="#list4">Medical<span><i class="fa fa-caret-square-o-down
+                    pull-right" aria-hidden="true"></i></span></button>
                     {{--list for Medical section--}}
                     <ul id="list4" class="collapse">
                         <li>
